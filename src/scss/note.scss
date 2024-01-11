@@ -1,0 +1,74 @@
+.note-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.note {
+  background: $grey;
+  margin: 10px;
+  width: 40%;
+  word-wrap: break-word;
+  min-height: 40vh;
+  margin-top: 20px;
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  text-align: left;
+}
+
+.editing {
+  display: inline-block;
+}
+
+textarea {
+  width: 100%;
+  border: none;
+  background: $grey;
+  color: $black;
+  outline: none;
+}
+
+.note-header {
+  background: $green;
+  color: $white;
+  padding: 8px;
+  display: flex;
+  justify-content: end;
+  gap: 15px;
+  align-items: center;
+  font-size: 1.2em;
+  padding-right: 15px;
+
+  .icon:hover {
+    cursor: pointer;
+    color: $dark-green;
+  }
+}
+
+.note-content {
+  padding: 10px;
+  white-space: pre-wrap;
+  resize: none;
+}
+
+.note-buttons {
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+
+.note-buttons button {
+  background: $green;
+  color: $white;
+  border: none;
+  padding: 5px 10px;
+  font-weight: 400;
+  font-size: 0.9em;
+  border-radius: 4px;
+  cursor: pointer;
+}
